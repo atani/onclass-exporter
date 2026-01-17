@@ -3,22 +3,22 @@
   "name": "オンクラス感想エクスポーター",
   "version": "1.0.0",
   "description": "オンクラスの感想データをエクスポートするChrome拡張機能",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "permissions": [
     "activeTab",
     "scripting",
     "downloads"
   ],
-  "host_permissions": [
-    "https://manager.the-online-class.com/*"
-  ],
   "action": {
-    "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://manager.the-online-class.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
-  ]
+  }
 }

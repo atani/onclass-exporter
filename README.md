@@ -2,6 +2,12 @@
 
 オンクラス管理画面の感想データをエクスポートする Chrome 拡張です。期間指定や全ページ一括取得に対応しています。
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/hdjdlceoifbamleejbffmmmjcfnokiek)](https://chromewebstore.google.com/detail/%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9%E6%84%9F%E6%83%B3%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC/hdjdlceoifbamleejbffmmmjcfnokiek)
+
+## インストール
+
+[Chrome Web Store からインストール](https://chromewebstore.google.com/detail/%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9%E6%84%9F%E6%83%B3%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC/hdjdlceoifbamleejbffmmmjcfnokiek)
+
 ## 機能
 
 - 感想一覧ページからのデータ抽出
@@ -10,13 +16,6 @@
 - JSON / CSV でのダウンロード
 
 ## 使い方
-
-1. Chrome で `chrome://extensions/` を開く
-2. 右上の「デベロッパーモード」を有効化
-3. 「パッケージ化されていない拡張機能を読み込む」をクリック
-4. このリポジトリのフォルダを選択
-
-## 操作手順
 
 1. オンクラス管理画面の感想ページを開く
 2. 拡張のアイコンをクリック
