@@ -75,18 +75,7 @@
     });
   }
 
-  // 日付フィルタリング
-  function filterByDate(feedbacks, filter) {
-    if (!filter.start && !filter.end) return feedbacks;
-
-    return feedbacks.filter(f => {
-      if (!f.date) return true;
-      const feedbackDate = f.date.replace(/\//g, '-');
-      if (filter.start && feedbackDate < filter.start) return false;
-      if (filter.end && feedbackDate > filter.end) return false;
-      return true;
-    });
-  }
+  // filterByDate は utils.js で定義
 
   // 現在ページの感想を抽出
   function extractCurrentPageFeedbacks() {

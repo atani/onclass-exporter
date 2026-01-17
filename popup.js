@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       await chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ['content.js']
+        files: ['utils.js', 'content.js']
       });
       await new Promise(r => setTimeout(r, 200));
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       await chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ['content.js']
+        files: ['utils.js', 'content.js']
       });
       await new Promise(r => setTimeout(r, 100));
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       await chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ['content.js']
+        files: ['utils.js', 'content.js']
       });
       await new Promise(r => setTimeout(r, 100));
 
@@ -157,15 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
   }
 
-  function filterByDate(feedbacks, filter) {
-    return feedbacks.filter(f => {
-      if (!f.date) return true;
-      const feedbackDate = f.date.replace(/\//g, '-');
-      if (filter.start && feedbackDate < filter.start) return false;
-      if (filter.end && feedbackDate > filter.end) return false;
-      return true;
-    });
-  }
+  // filterByDate は utils.js で定義
 
   function showResult(message, isError = false) {
     result.textContent = message;
@@ -222,12 +214,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  function escapeCsvField(field) {
-    if (!field) return '';
-    const str = String(field);
-    if (str.includes(',') || str.includes('"') || str.includes('\n')) {
-      return '"' + str.replace(/"/g, '""') + '"';
-    }
-    return str;
-  }
+  // escapeCsvField は utils.js で定義
 });
