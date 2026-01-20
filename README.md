@@ -1,5 +1,12 @@
 # オンクラス感想エクスポーター
 
+> **このプロジェクトはアーカイブされました**
+>
+> 後継の [オンクラスエンハンサー](https://chromewebstore.google.com/detail/%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%A8%E3%83%B3%E3%83%8F%E3%83%B3%E3%82%B5%E3%83%BC/clfpdmnjjknciooaakdojmpfbfgcolgn) をご利用ください。
+> 感想エクスポート機能に加え、より多くの機能が利用できます。
+
+---
+
 オンクラス管理画面の感想データをエクスポートする Chrome 拡張です。期間指定や全ページ一括取得に対応しています。
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/hdjdlceoifbamleejbffmmmjcfnokiek)](https://chromewebstore.google.com/detail/%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9%E6%84%9F%E6%83%B3%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC/hdjdlceoifbamleejbffmmmjcfnokiek)
